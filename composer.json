@@ -1,0 +1,22 @@
+{
+    "name": "webvpf/wn-christmas-plugin",
+    "type": "winter-plugin",
+    "description": "Christmas - plugin for Winter CMS.",
+    "homepage": "https://github.com/WebVPF/wn-christmas-plugin",
+    "keywords": ["winter cms", "wintercms", "wintercms-plugin", "christmas", "garland", "snow"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WebVPF",
+            "role": "Author"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/WebVPF/wn-christmas-plugin/issues",
+        "source": "https://github.com/WebVPF/wn-christmas-plugin"
+    },
+    "require": {
+        "php": ">=7.2",
+        "composer/installers": "~1.0"
+    }
+}
