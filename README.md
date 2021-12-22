@@ -28,7 +28,7 @@ Christmas decorations for Winter CMS sites.
 
 The date of turning on and off the garland is indicated in the format `mm-dd`.
 
-## Снег
+## Snow
 
     [ChristmasSnow]
     amount = 50
@@ -42,7 +42,7 @@ The date of turning on and off the garland is indicated in the format `mm-dd`.
     {% component 'ChristmasSnow' %}
 
 - `amount` - Number of snowflakes displayed at the same time. Default: `50`
-- `size` - размер снежинки. Default: 5
+- `size` - snowflake size. Default: 5
 - `speed` - The speed of falling snowflakes vertically. The higher the value, the faster the snowflakes fall. Default: `1.5`
 - `wind` - Horizontal wind energy. The wind will blow to the right if it is a positive number, and a negative number causes the wind to blow to the left. Default: 0
 - `color` - The color of the snowflakes. This parameter accepts the color code HEX or RGB, example `#fff`, `#ffffff` or `rgb (255,255,255)`. Default: `#fff`
