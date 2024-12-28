@@ -6,7 +6,9 @@ Christmas decorations for Winter CMS sites.
 
 ## Installing Composer
 
-    composer require webvpf/wn-christmas-plugin
+```bash
+composer require webvpf/wn-christmas-plugin
+```
 
 ## Features
 
@@ -20,26 +22,30 @@ Christmas decorations for Winter CMS sites.
 
 ## Christmas garland
 
-    [ChristmasGarland]
-    dateOn = "01-01"
-    dateOff = "12-31"
-    ==
-    {% component 'ChristmasGarland' %}
+```ini
+[ChristmasGarland]
+dateOn = "01-01"
+dateOff = "12-31"
+==
+{% component 'ChristmasGarland' %}
+```
 
 The date of turning on and off the garland is indicated in the format `mm-dd`.
 
 ## Snow
 
-    [ChristmasSnow]
-    amount = 50
-    size = 5
-    speed = 1.5
-    wind = 0
-    color = "#fff"
-    opacity = 0.8
-    swing = 1
-    ==
-    {% component 'ChristmasSnow' %}
+```ini
+[ChristmasSnow]
+amount = 50
+size = 5
+speed = 1.5
+wind = 0
+color = "#fff"
+opacity = 0.8
+swing = 1
+==
+{% component 'ChristmasSnow' %}
+```
 
 - `amount` - Number of snowflakes displayed at the same time. Default: `50`
 - `size` - snowflake size. Default: 5
@@ -57,10 +63,12 @@ Below is an example of how to insert a garland in a demo template on the main pa
 
 Go to CMS and open **Demonstration** page. At the very beginning of the markup, insert **Christmas garland** component by dragging and dropping. To make the garland display correct, add the styles before the twig with the `ChristmasGarland` component as in this example:
 
-    <style>.jumbotron{padding-top:100px}.b-page_newyear{position:absolute;width:100%;height:100px;top:71px}</style>
+```twig
+<style>.jumbotron{padding-top:100px}.b-page_newyear{position:absolute;width:100%;height:100px;top:71px}</style>
 
-    {% component 'ChristmasGarland' %}
+{% component 'ChristmasGarland' %}
 
-    demo page content...
+demo page content...
+```
 
 ![Screenshot of page with garland](https://raw.githubusercontent.com/WebVPF/wn-christmas-plugin/main/assets/img/screens/demo-theme-wintercms.jpg)
