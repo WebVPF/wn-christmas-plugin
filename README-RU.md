@@ -6,7 +6,9 @@
 
 ## Установка через Composer
 
-    composer require webvpf/wn-christmas-plugin
+```bash
+composer require webvpf/wn-christmas-plugin
+```
 
 ## Особенности
 
@@ -20,27 +22,31 @@
 
 ## Новогодняя гирлянда
 
-    [ChristmasGarland]
-    dateOn = "01-01"
-    dateOff = "12-31"
-    ==
-    {% component 'ChristmasGarland' %}
+```ini
+[ChristmasGarland]
+dateOn = "01-01"
+dateOff = "12-31"
+==
+{% component 'ChristmasGarland' %}
+```
 
 <!-- Например вам нужно чтобы гирлянда сама включилась 15 декабря и выключилась 15 января. -->
 Дата включения и выключения гирлянды указывается в формате `мм-чч`.
 
 ## Снег
 
-    [ChristmasSnow]
-    amount = 50
-    size = 5
-    speed = 1.5
-    wind = 0
-    color = "#fff"
-    opacity = 0.8
-    swing = 1
-    ==
-    {% component 'ChristmasSnow' %}
+```ini
+[ChristmasSnow]
+amount = 50
+size = 5
+speed = 1.5
+wind = 0
+color = "#fff"
+opacity = 0.8
+swing = 1
+==
+{% component 'ChristmasSnow' %}
+```
 
 - `amount` - Количество снежинок, отображаемых одновременно. По умолчанию: `50`
 - `size` - размер снежинки. По умолчанию: 5
@@ -58,10 +64,12 @@
 
 Перейдите в CMS и откройте страницу **Demonstration**. В самое начало разметки вставьте перетаскиванием компонент **Новогодняя гирлянда**. Чтобы сделать отображение гирлянды правильным, добавьте перед твигом выводящим компонет `ChristmasGarland` стили как в данном примере:
 
-    <style>.jumbotron{padding-top:100px}.b-page_newyear{position:absolute;width:100%;height:100px;top:71px}</style>
+```twig
+<style>.jumbotron{padding-top:100px}.b-page_newyear{position:absolute;width:100%;height:100px;top:71px}</style>
 
-    {% component 'ChristmasGarland' %}
+{% component 'ChristmasGarland' %}
 
-    контент демо страницы...
+контент демо страницы...
+```
 
 ![Скриншот страницы с гирляндой](https://raw.githubusercontent.com/WebVPF/wn-christmas-plugin/main/assets/img/screens/demo-theme-wintercms.jpg)
