@@ -4,7 +4,7 @@ use Cms\Classes\ComponentBase;
 
 class Snow extends ComponentBase
 {
-    public function componentDetails()
+    public function componentDetails(): array
     {
         return [
             'name'        => 'webvpf.christmas::lang.snow.name',
@@ -12,7 +12,7 @@ class Snow extends ComponentBase
         ];
     }
 
-    public function defineProperties()
+    public function defineProperties(): array
     {
         return [
             'shape' => [
