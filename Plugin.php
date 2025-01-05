@@ -17,8 +17,8 @@ class Plugin extends PluginBase
     public function registerComponents(): array
     {
         return [
-            'WebVPF\Christmas\Components\Garland' => 'ChristmasGarland',
-            'WebVPF\Christmas\Components\Snow' => 'ChristmasSnow',
+            \WebVPF\Christmas\Components\Garland::class => 'ChristmasGarland',
+            \WebVPF\Christmas\Components\Snow::class => 'ChristmasSnow',
         ];
     }
 }
